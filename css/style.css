@@ -30,9 +30,12 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #333333;
+	background: #cccccc;
 }
 .container {
-	min-width: 1120px;
+	width: 768px;
+	min-width: 768px;
+	margin: 0 auto;
 }
 a{
 	transition: all 0.3s;
@@ -49,4 +52,71 @@ a:hover {
 }
 .fw_bold {
 	font-weight: bold;
+}
+
+
+
+/****************************************************
+* 2.LAYOUTS
+****************************************************/
+.button01 {
+	padding: 20px;
+	border: 2px solid #F5885D;
+	border-radius: 50px;
+	color: #F5885D;
+	font-family: "Hiragino Kaku Gothic ProN W6";
+	font-size: 1.4rem;
+	display: block;
+	text-decoration: none;
+}
+
+/****************************************************
+* 3.TEMPLATE
+****************************************************/
+/****************************************************
+* HEADER TEMPLATE SETTING
+****************************************************/
+#header {
+	background: #ffffff;
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 2px 6px #FFA480;
+}
+
+
+
+/* main */
+#main {
+	background: #FEF5ED;
+}
+
+
+
+/* Footer */
+
+.twitter {
+	background: #AA9E9A;
+	padding: 10px;
+	text-align: center;
+}
+.ft_content {
+	padding: 20px;
+	background: #897E79;
+	text-align: center;
+}
+#footer a {
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+.ft_menu li {
+	display: inline-block;
+}
+.ft_menu {
+	margin-bottom: 20px;
+}
+.copyright {
+	color: #ffffff;
 }

@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>サイトタイトル</title>
-    <meta name="description" content="ディスクリプション" />
+    <title>Recom</title>
+    <meta name="description" content="" />
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="./css/common.css" media="all" />
@@ -16,15 +16,13 @@
     <div class="container" id="index">
         <!--TOPページIDはindex、下層ページはcontents-->
         <header id="header">
-            <h1>ロゴ、サイトタイトル</h1>
-            <div id="gNav">
-                <nav>
-                    <ul>
-                        <li><a href="">グローバルナビメニュー</a></li>
-                        <li><a href="">グローバルナビメニュー</a></li>
-                        <li><a href="">グローバルナビメニュー</a></li>
-                    </ul>
-                </nav>
+            <h1 class="hd_logo">
+                <a href="#">
+                    <img src="./img/top/logo.png" alt="RECOM">
+                </a>
+            </h1>
+            <div class="hd_request">
+                <a href="#" class="button01">リクエスト</a>
             </div>
             <!--/header-->
         </header>
@@ -36,14 +34,22 @@
             <!--/main-->
         </div>
         <footer id="footer">
-            <div class="pagetop"><img src="./img/common/icon_pagetop01.png" alt="" /></div>
-            <div>フッター内要素</div>
-            <div class="copyright"> Copyright(c)2020 xxxxxxxx. </div>
+            <div class="twitter">
+                <a href="#"><img src="" alt="">@recomxxx</a>
+            </div>
+            <div class="ft_content">
+                <ul class="ft_menu">
+                    <li><a href="#">運営会社</a></li>
+                    <li><a href="#">リクエスト</a></li>
+                </ul>
+            <div class="copyright">© 2020 recom</div>
+            </div>
             <!--/footer-->
         </footer>
         <!--/container-->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
     <!--プラグインのJSはここに入れる-->
     <script src="./js/script.js"></script>
 </body>
