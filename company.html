@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Recom</title>
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="./css/common.css" media="all" />
+    <!--プラグインのCSSはここに入れる-->
+    <link rel="stylesheet" href="./css/style.css" media="all" />
+</head>
+
+<body>
+    <div class="container" id="contents">
+        <!--TOPページIDはindex、下層ページはcontents-->
+        <header id="header">
+            <h1 class="hd_logo">
+                <a href="#">
+                    <img src="./img/top/logo.png" alt="RECOM">
+                </a>
+            </h1>
+            <div class="hd_request">
+                <a href="#" class="button01">リクエスト</a>
+            </div>
+            <!--/header-->
+        </header>
+        <div id="main" class="company">
+            <section class="top_sec01">
+                <div class="inner">
+                    <h3 class="ttl_section">
+                        <span>会社概要</span>
+                    </h3>
+                    <div class="info_company">
+                        <div class="info1">
+                            <h4>会社名</h4>
+                            <p>batch mate Inc.</p>
+                        </div>
+                        <div class="info2">
+                            <h4>住所</h4>
+                            <p>〒155-0031
+                               <br> 東京都世田谷区北沢2-27-9</p>
+                        </div>
+                        <div class="info3">
+                            <h4>業務内容</h4>
+                            <p>アプリケーション開発・運営</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/top_sec01-->
+            </section>
+            <section class="top_sec02">
+                <div class="inner">
+                    <h3 class="ttl_section">
+                        <span>書き込みに関するルール</span>
+                    </h3>
+                    <div>
+                        <textarea name="textarea" id="" ></textarea>
+                    </div>
+                </div>
+                <!--/top_sec02-->
+            </section>
+            <section class="top_sec03">
+                <div class="inner">
+                    <h3 class="ttl_section">
+                        <span>お問い合わせ</span>
+                    </h3>
+                    <div class="mailform">
+                        <form id="form" action="./lib/mail/mail.php" method="post">
+                            <div class="wrapper_contact">
+                                <div class="input01">
+                                    <h5>氏名<span>＊必須</span></h5>
+                                    <input type="text" name="氏名" id="氏名">
+                                    <p class="is_error_氏名"></p>
+                                </div>
+                                <div class="input02">
+                                    <h5>メールアドレス<span>＊必須</span></h5>
+                                    <input type="text" name="メールアドレス" id="メールアドレス">
+                                    <p class="is_error_メールアドレス"></p>
+                                </div>
+                                <div class="input03">
+                                    <h5>電話番号<span>＊必須</span></h5>
+                                    <input type="text" name="電話番号" id="電話番号">
+                                    <p class="is_error_電話番号"></p>
+                                </div>
+                                <div class="input04">
+                                    <h5>お問い合わせ内容<span>＊必須</span></h5>
+                                    <textarea name="お問い合わせ内容" id="お問い合わせ内容"></textarea>
+                                    <p class="is_error_お問い合わせ内容"></p>
+                                </div>
+                            </div>
+                            <div class="submit">
+                                <input id="submit" type="submit" value="送信" class="confirmation" disabled="disabled">
+                            </div>
+                            <!--End Form-->
+                        </form>
+                    </div>
+                </div>
+                <!--/top_sec03-->
+            </section>
+            <!--/main-->
+        </div>
+        <footer id="footer">
+            <div class="twitter">
+                <a href="#"><img src="" alt="">@recomxxx</a>
+            </div>
+            <div class="ft_content">
+                <ul class="ft_menu">
+                    <li><a href="#">運営会社</a></li>
+                    <li><a href="#">リクエスト</a></li>
+                </ul>
+            <div class="copyright">© 2020 recom</div>
+            </div>
+            <!--/footer-->
+        </footer>
+        <!--/container-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <!--プラグインのJSはここに入れる-->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -69,6 +69,10 @@ a:hover {
 	display: block;
 	text-decoration: none;
 }
+.inner {
+	width: 96%;
+	margin: 0 auto;
+}
 
 /****************************************************
 * 3.TEMPLATE
@@ -119,4 +123,157 @@ a:hover {
 }
 .copyright {
 	color: #ffffff;
+}
+/****************************************************
+  * TITLE SECTION STYLE ON PC
+  ****************************************************/
+  .ttl_section {
+	  position: relative;
+	  padding-bottom: 8px;
+  }
+  .ttl_section span {
+	font-family: 'Hiragino Kaku Gothic ProN W6';
+	line-height: 2.7;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding-left: 12px;
+	color: rgb(137, 126, 121);
+  }
+  .ttl_section::before {
+	content: '';
+	display: inline-block;
+	background-image: linear-gradient(rgb(245,155,72),rgb(255,199,152));
+	height: 24px;
+	width: 4px;
+	border-radius: 20px;
+	position: absolute;
+	top: 9px;
+  }
+
+/****************************************************
+ * 4.CONTENT
+ ****************************************************/
+	/****************************************************
+  * COMPANY PAGE CONTENT SETTING
+	****************************************************/
+  .company {
+	  padding-bottom: 40px;
+  }
+  .top_sec01 {
+	  padding-top: 15px;
+  }
+  .top_sec01 .info_company {
+	background-color: #ffffff;
+	border-radius: 7px;
+  }
+  .top_sec01 .info_company .info1,
+  .top_sec01 .info_company .info2,
+  .top_sec01 .info_company .info3 {
+	  display: flex;
+	  align-items: center;
+	  justify-content: flex-start;
+	  width: 96%;
+	  margin: 0 auto;
+  }
+  .top_sec01 .info_company .info1,
+  .top_sec01 .info_company .info2 {
+	  border-bottom: 1px solid rgb(230 ,230 ,230);
+  }
+  .top_sec01 .info_company  h4 {
+	font-size: 1.4rem;
+	line-height: 3.6;
+	color: rgb(137, 126, 121);
+	font-weight: bold;
+	width: 60px;
+  }
+  .top_sec01 .info_company .info2 p {
+	  padding: 10px 0;
+  }
+  .top_sec01 .info_company  p {
+	font-size: 1.4rem;
+	line-height: 1.7;
+	margin-left: 100px;
+  }
+  .top_sec02,
+  .top_sec03 {
+	  padding-top: 23px;
+  }
+  .top_sec02 textarea {
+	  width: 100%;
+	  height: 232px;
+	  border: none;
+	  border-radius: 5px;
+  }
+  .top_sec03 .wrapper_contact {
+	  width: 96%;
+	  margin: 0 auto;
+	  padding: 4px 0 16px;
+  }
+  .top_sec03 .mailform {
+	  background-color: #ffffff;
+	  border-radius: 7px;
+	  padding-bottom: 24px;
+  }
+  .top_sec03 .wrapper_contact h5 {
+	font-size: 1.4rem;
+	font-weight: bold;
+	line-height: 2.4;
+	padding: 6px 0 2px 0;
+  }
+  .top_sec03 .wrapper_contact h5 span {
+	  font-size: 1rem;
+	color: rgb(219, 64, 44,0.4);
+	margin-left: 7px;
+  }
+  .top_sec03 .wrapper_contact input[type=text] {
+	  width: 100%;
+	  height: 40px;
+	  border: 1px solid rgb(230, 230, 230);
+	  border-radius: 5px;
+  }
+  .top_sec03 .wrapper_contact textarea {
+	  width: 100%;
+	  height: 120px;
+	  border: 1px solid rgb(230, 230, 230);
+	  border-radius: 5px;
+  }
+  .top_sec03 .submit {
+	  width: 96%;
+	  margin: 0 auto;
+  }
+  .top_sec03 .submit input {
+	font-size: 1.6rem;
+	font-weight: bold;
+	font-family: 'Hiragino Kaku Gothic ProN W6';
+	width: 100%;
+    height: 44px;
+    background-color: rgb(175,175,175);
+    border: none;
+    border-radius: 20px;
+	color: #ffffff;
+	cursor: pointer;
+  }
+  .top_sec03 .is-error {
+	  font-size: 1.2rem;
+	  color: #ff0000;
+	  line-height: 1;
+  }
+@media only screen and (max-width: 768px) {
+/****************************************************
+* 6.LAYOUT SETTING ON SP
+****************************************************/
+/****************************************************
+* 7.TEMPLATE SETTING ON SP
+****************************************************/
+    /****************************************************
+    * HEADER TEMPLATE SETTING
+	****************************************************/
+	.container {
+		min-width: 100%;
+		width: 100%;
+    }
+    .inner {
+        width: 94%;
+        max-width: 100%;
+    }
 }
