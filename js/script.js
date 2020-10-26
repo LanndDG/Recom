@@ -168,12 +168,11 @@ form.addEventListener('input', () => {
     メールアドレス.value.length > 0 && 
     電話番号.value.length > 0 && 
     お問い合わせ内容.value.length > 0) {
-    console.log('aaaa');
     submit.removeAttribute('disabled');
-    submit.setAttribute('style', 'background-color: rgb(245,136,93)')
+    submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #ffffff');
   }else {
     submit.setAttribute('disabled', 'disabled');
-    submit.setAttribute('style', 'background-color: rgb(175,175,175)')
+    submit.setAttribute('style', 'background-color: rgb(175,175,175);cursor: default');
   }
 })
 
