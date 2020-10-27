@@ -26,7 +26,7 @@
             </div>
             <!--/header-->
         </header>
-        <div id="main" class="top_page">
+        <div id="main" class="request_page">
             <div class="inner">
                 <section class="request_sec01">
                     <div class="sec01_row01">
@@ -38,9 +38,11 @@
                         </div>
                         <img src="./img/request/pic_img01.png" alt="" class="sec01_img01">
                     </div>
-                    <textarea class="sec01_textarea" placeholder="リクエストを書き込む"></textarea>
-                    <input class="sec01_input" placeholder="名前（匿名可）"/>
-                    <a class="sec01_btn01">送信</a>
+                    <form id="requestForm" method="post">
+                        <textarea class="sec01_textarea" name="contentRequest" id="contentRequest" placeholder="リクエストを書き込む"></textarea>
+                        <input class="sec01_input" name="nameAnonymos" id="nameAnonymos" placeholder="名前（匿名可）"/>
+                        <input class="sec01_btn01" id="submit" value="送信" type="submit" disabled="disabled" />
+                    </form>
                     <!--/request_sec01-->
                 </section>
     
@@ -53,12 +55,12 @@
                         <p class="request_box_decs">ユーザーから運営へのリクエストががここに表示されるよ</p>
                         <p class="request_box_time">2020-08-28 10:41:13</p>
                     </div>
-                    <a class="sec01_btn02">広告枠</a>
+                    <a class="sec01_btn02" href="">広告枠</a>
     
                     <div class="request_box request_box_mb8">
                         <div class="sec01_row02">
                             <h4><span class="number">3</span><span class="name">ヒカル</span>(ID: b9d47e89)</h4>
-                            <a class="detail_link">通報</a>
+                            <a class="detail_link" href="">通報</a>
                         </div>
                         <p class="request_box_decs">ユーザーから運営へのリクエストががここに表示されるよ</p>
                         <p class="request_box_time">2020-08-28 10:41:13</p>
@@ -67,7 +69,7 @@
                     <div class="request_box request_box_mb8">
                         <div class="sec01_row02">
                             <h4><span class="number">2</span><span class="name">匿名</span>(ID: b9d47e89)</h4>
-                            <a class="detail_link">通報</a>
+                            <a class="detail_link" href="">通報</a>
                         </div>
                         <p class="request_box_decs">ユーザーから運営へのリクエストががここに表示されるよ</p>
                         <p class="request_box_time">2020-08-28 10:41:13</p>
@@ -76,7 +78,7 @@
                     <div class="request_box">
                         <div class="sec01_row02">
                             <h4><span class="number">1</span><span class="name">ななこ</span>(ID: b9d47e89)</h4>
-                            <a class="detail_link">通報</a>
+                            <a class="detail_link" href="">通報</a>
                         </div>
                         <p class="request_box_decs">ユーザーから運営へのリクエストががここに表示されるよ</p>
                         <p class="request_box_time">2020-08-28 10:41:13</p>

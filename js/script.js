@@ -176,3 +176,12 @@ form.addEventListener('input', () => {
   }
 })
 
+
+requestForm.addEventListener('input', () => {
+  if(contentRequest.value.length > 0 &&
+    nameAnonymos.value.length > 0) {
+    console.log("content_request.value.")
+    submit.removeAttribute('disabled');
+    submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #FFFFFF');
+  }
+})
