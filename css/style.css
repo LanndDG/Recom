@@ -55,6 +55,7 @@ a:hover {
 }
 input,textarea {
 	padding-left: 10px;
+	max-width: 100%;
 }
 
 
@@ -236,8 +237,7 @@ input,textarea {
 	  border-radius: 5px;
   }
   .company_sec03 .submit {
-	  width: 96%;
-	  margin: 0 auto;
+	  margin: 0 16px;
   }
   .company_sec03 .submit input {
 	font-size: 1.6rem;
