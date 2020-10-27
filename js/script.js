@@ -180,5 +180,19 @@ window.addEventListener('load', () => {
       }
     })
   }
+  if (page === 'detail.html') {
+    formRating.addEventListener('input', () => {
+      const checkboxes = document.querySelectorAll('input[name="rating"]:checked');
+      if(コメント.value.length > 0 &&
+        匿名可.value.length > 0 && 
+        checkboxes.length > 0) {
+        submit.removeAttribute('disabled');
+        submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #ffffff');
+      }else {
+        submit.setAttribute('disabled', 'disabled');
+        submit.setAttribute('style', 'background-color: rgb(175,175,175);cursor: default');
+      }
+    })
+  }
 });
 
