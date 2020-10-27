@@ -36,14 +36,14 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 //---------------------------　必須設定　必ず設定してください　-----------------------
 
 //サイトのトップページのURL　※サンクスページ無しの場合はTOPに転送します。httpから始まるURLで指定ください。（相対パスでも基本的には問題ないです）
-$site_top = "http://webcircle09.heteml.net/demo/dg/neotech-dg/";
+$site_top = "http://webcircle09.heteml.net/demo/dg/Recom/";
 
 //管理者のメールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-$to = "h_suzuki@webcircle.jp";
+$to = "lan.nguyen@digitalgate.world";
 
 //自動返信メールの送信元メールアドレス
 //必ず実在するメールアドレスでかつ出来る限り設置先サイトのドメインと同じドメインのメールアドレスとすることを強く推奨します
-$from = "h_suzuki@webcircle.jp";
+$from = "lan.nguyen@digitalgate.world";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "メールアドレス";
@@ -100,7 +100,7 @@ $confirmDsp = 0;
 $jumpPage = 0;
 
 // 送信完了後に表示するページURL（上記で1を設定した場合のみ）※httpから始まるURLで指定ください。（相対パスでも基本的には問題ないです）
-$thanksPage = "http://webcircle09.heteml.net/demo/dg/neotech-dg/";
+$thanksPage = "http://webcircle09.heteml.net/demo/dg/Recom/";
 
 // 必須入力項目を設定する(する=1, しない=0)
 $requireCheck = 0;
@@ -120,7 +120,7 @@ $require = array('お名前','メールアドレス');
 $remail = 0;
 
 //自動返信メールの送信者欄に表示される名前　※あなたの名前や会社名など（もし自動返信メールの送信者名が文字化けする場合ここは空にしてください）
-$refrom_name = "株式会社ネオ・テックサービス";
+$refrom_name = "株式会社Recom・テックサービス";
 
 // 差出人に送信確認メールを送る場合のメールのタイトル（上記で1を設定した場合のみ）
 $re_subject = "送信ありがとうございました";
@@ -147,10 +147,9 @@ $mailFooterDsp = 1;
 $mailSignature = <<< FOOTER
 
 ──────────────────────
-株式会社ネオ・テックサービス
-〒102-0072
-東京都千代田区飯田橋4-5-16 コアビル8F
-TEL：03−3511-1125
+batch mate Inc.
+〒155-0031
+東京都世田谷区北沢2-27-9
 ──────────────────────
 
 FOOTER;
@@ -296,42 +295,14 @@ else if($confirmDsp == 1){
 	htmlTemplate("footer");
 }
 if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 && $sendmail == 0))) {
-	/* ▼▼▼送信完了画面のレイアウト　編集可 ※送信完了後に指定のページに移動しない場合のみ表示▼▼▼　*/
-	?>
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>完了画面</title>
-	</head>
-	<body>
-	<div align="center">
-	<?php if($empty_flag == 1){ ?>
-	<h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
-	<div style="color:red"><?php echo $errm; ?></div>
-	<br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()">
-	</div>
-	</body>
-	</html>
-	<?php }else{ ?>
-	送信ありがとうございました。<br />
-	送信は正常に完了しました。<br /><br />
-	<a href="<?php echo $site_top ;?>" style = "color: #0066cc;">トップページへ戻る&raquo;</a>
-	</div>
-	<!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
-	</body>
-	</html>
-	<?php 
-	/* ▲▲▲送信完了画面のレイアウト 編集可 ※送信完了後に指定のページに移動しない場合のみ表示▲▲▲　*/
-	  }
-	// if($empty_flag == 1){
-	// 	htmlTemplate("header");
-	// 	errorMes();
-	// 	htmlTemplate("footer");
-	// }else{
-	// 	//完了ページ無しの場合は、TOPページヘリダイレクト
-	// 	header("Location: ".$site_top);
-	// }
+	if($empty_flag == 1){
+		htmlTemplate("header");
+		errorMes();
+		htmlTemplate("footer");
+	}else{
+		//完了ページ無しの場合は、TOPページヘリダイレクト
+		header("Location: ".$site_top);
+	}
 }
 //確認画面無しの場合の表示、指定のページに移動する設定の場合、エラーチェックで問題が無ければ指定ページヘリダイレクト
 else if(($jumpPage == 1 && $sendmail == 1) || $confirmDsp == 0) {
