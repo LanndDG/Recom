@@ -70,7 +70,9 @@ function removeMemuOnSp() {
 jQuery.validator.addMethod("emailRule", function(value, element) {
   return value.match(/^[\.!#%&\-_0-9a-zA-Z\?\/\+]+\@[!#%&\-_0-9a-zA-Z]+\.[!#%&\-_0-9a-zA-Z]+/);
 },'入力に誤りがあります。');
-
+jQuery.validator.addMethod("phoneRule", function(value, element) {
+  return value.match(/^[0-9]/);
+},'未入力です。');
 $("#form").validate({
   invalidHandler: function(form, validator) {
     var errors = validator.numberOfInvalids();
@@ -88,7 +90,7 @@ $("#form").validate({
     return $.trim(value);
   },
   rules: {
-    'お名前': {
+    '氏名': {
       required: true
     },
     'メールアドレス': {
@@ -96,26 +98,27 @@ $("#form").validate({
       email: true,
       emailRule: true
     },
-    'お問い合せ内容': {
+    'お問い合わせ内容': {
       required: true,
     },
-    'プライバシーポリシー': {
+    '電話番号': {
       required: true,
+      phoneRule:true
     }
   },
   messages: {
-    'お名前': {
+    '氏名': {
       required: "未入力です。",
     },
     'メールアドレス': {
       required: "未入力です。",
       email: "入力に誤りがあります。"
     },
-    'お問い合せ内容': {
+    'お問い合わせ内容': {
       required: "未入力です。",
     },
-    'プライバシーポリシー': {
-      required: "個人情報保護方針にご同意ください",
+    '電話番号': {
+      required: "未入力です。",
     },
   },
 
@@ -124,12 +127,6 @@ $("#form").validate({
     var name = element.attr("name");
     if (element.attr("name") === name) {
       error.appendTo($(".is_error_" + name));
-    }
-    if ($(".table-contact input").find(".is-error")) {
-      $(".table-contact tbody tr:nth-child(2) td").css("padding-top", "12px");
-      $(".table-contact tbody tr:nth-child(2) td").css("padding-bottom", "12px");
-      $(".table-contact tbody tr:nth-child(3) td").css("padding-top", "12px");
-      $(".table-contact tbody tr:nth-child(3) td").css("padding-bottom", "12px")
     }
   },
 
@@ -157,21 +154,7 @@ function _handleScroll() {
   });
 }
 
-function updateHeader() {
-  var isToppage = $('#index');
-  if (isToppage.length > 0) {
-      $(window).scroll(function() {
-          if ($(this).scrollTop() >= 100) {
-              $("#header").addClass('activer');
-          } else {
-              $("#header").removeClass('activer');
-          }
-      });
-  } else {
-      $("#header").addClass('activer');
-  }
-}
-updateHeader();
+
 // Anchor link smooth
 $(document).on('click', 'a[href^="#"]', function(event) {
   event.preventDefault();
@@ -180,3 +163,16 @@ $(document).on('click', 'a[href^="#"]', function(event) {
       scrollTop: $($.attr(this, 'href')).offset().top - offsetSize
   }, 900);
 });
+form.addEventListener('input', () => {
+  if(氏名.value.length > 0 &&
+    メールアドレス.value.length > 0 && 
+    電話番号.value.length > 0 && 
+    お問い合わせ内容.value.length > 0) {
+    submit.removeAttribute('disabled');
+    submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #ffffff');
+  }else {
+    submit.setAttribute('disabled', 'disabled');
+    submit.setAttribute('style', 'background-color: rgb(175,175,175);cursor: default');
+  }
+})
+
