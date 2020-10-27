@@ -16,26 +16,49 @@
     <div class="container" id="contents">
         <!--TOPページIDはindex、下層ページはcontents-->
         <header id="header">
-            <h1>ロゴ、サイトタイトル</h1>
-            <div id="gNav">
-                <nav>
-                    <ul>
-                        <li><a href="">グローバルナビメニュー</a></li>
-                        <li><a href="">グローバルナビメニュー</a></li>
-                        <li><a href="">グローバルナビメニュー</a></li>
-                    </ul>
-                </nav>
+            <h1 class="hd_logo">
+                <a href="#">
+                    <img src="./img/top/logo.png" alt="RECOM">
+                </a>
+            </h1>
+            <div class="hd_request">
+                <a href="#" class="button01">リクエスト</a>
             </div>
             <!--/header-->
         </header>
-        <div id="main">
-            <div class="page_title">ページタイトル部
-                <!--/page_title-->
-            </div>
-            <div class="breadcrumb">ぱんくず
-                <!--/breadcrumb-->
-            </div>
-            <section class="xxxx_sec01">
+        <div id="main" class="detail">
+            <section class="detail_sec01">
+                <video src="" class="video_stearm"></video>
+                <div class="detail_channel inner">
+                    <div class="des_channel">
+                        <img class="avata_channel" src="./img/detail/avater.png" alt="">
+                        <h3 class="name_channel">ワタナベマホト</h3>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>チャンネル登録者数</th>
+                                <td>4,170,000人</td>
+                            </tr>
+                            <tr>
+                                <th>事務所名</th>
+                                <td>UUUM</td>
+                            </tr>
+                            <tr>
+                                <th>総合評価</th>
+                                <td>アプリケーション開発・運営</td>
+                            </tr>
+                            <tr>
+                                <th>登録日</th>
+                                <td>2020/08/17</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="correction">訂正依頼</a>
+                </div>
+                <!--/detail_sec01-->
+            </section>
+            <section class="detail_sec02">
                 <fieldset class="rating">
                     <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
                     <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
@@ -53,9 +76,16 @@
             <!--/main-->
         </div>
         <footer id="footer">
-            <div class="pagetop"><img src="./img/common/icon_pagetop01.png" alt="" /></div>
-            <div>フッター内要素</div>
-            <div class="copyright">Copyright(c)2020 xxxxxxxx.</div>
+            <div class="twitter">
+                <a href="#"><img src="" alt="">@recomxxx</a>
+            </div>
+            <div class="ft_content">
+                <ul class="ft_menu">
+                    <li><a href="#">運営会社</a></li>
+                    <li><a href="#">リクエスト</a></li>
+                </ul>
+            <div class="copyright">© 2020 recom</div>
+            </div>
             <!--/footer-->
         </footer>
         <!--/container-->
