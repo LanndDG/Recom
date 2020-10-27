@@ -163,6 +163,7 @@ $(document).on('click', 'a[href^="#"]', function(event) {
       scrollTop: $($.attr(this, 'href')).offset().top - offsetSize
   }, 900);
 });
+
 form.addEventListener('input', () => {
   if(氏名.value.length > 0 &&
     メールアドレス.value.length > 0 && 
@@ -176,11 +177,10 @@ form.addEventListener('input', () => {
   }
 })
 
-
 requestForm.addEventListener('input', () => {
   if(contentRequest.value.length > 0 &&
     nameAnonymos.value.length > 0) {
-    request_submit.removeAttribute('disabled');
-    request_submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #FFFFFF');
+      requestSubmit.removeAttribute('disabled');
+      requestSubmit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #FFFFFF');
   }
 })
