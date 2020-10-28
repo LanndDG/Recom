@@ -181,6 +181,14 @@ window.addEventListener('load', () => {
     })
   }
   if (page === 'detail.html') {
+    var numItems = $('.request_box').length;
+    $('.number').each(function(){
+      if(numItems>0)
+      {
+          $(this).html(numItems);
+      }
+      numItems--;
+  })
     formRating.addEventListener('input', () => {
       const checkboxes = document.querySelectorAll('input[name="rating"]:checked');
       if(コメント.value.length > 0 &&
