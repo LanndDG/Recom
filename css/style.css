@@ -67,7 +67,7 @@ input,textarea {
 	border: 2px solid #F5885D;
 	border-radius: 50px;
 	color: #F5885D;
-	font-family: "Hiragino Kaku Gothic ProN W6";
+	font-weight: bold;
 	font-size: 1.4rem;
 	display: block;
 	text-decoration: none;
@@ -149,14 +149,12 @@ input,textarea {
 .right_card p.channel {
 	font-size: 1rem;
 	line-height: 1.7;
-	font-family: "Hiragino Kaku Gothic ProN";
 	color: #897E79;
 }
 .right_card .name_channel {
 	font-size: 1.6rem;
 	line-height: 1.375;
 	color: #322824;
-	font-family: "Hiragino Kaku Gothic ProN";
 	font-weight: bold;
 }
 .right_card .sum_comment {
@@ -201,7 +199,7 @@ input,textarea {
 	background: #F5885D;
 	font-size: 1.2rem;
 	line-height: 1.6667;
-	font-family: "Hiragino Kaku Gothic ProN W6";
+	font-weight: bold;
 	color: #ffffff;
 	padding: 10px 16px;
 	position: relative;
@@ -230,11 +228,9 @@ input,textarea {
 	color: #322824;
 	font-size: 1.4rem;
 	line-height: 1.72;
-	font-family: "Hiragino Kaku Gothic ProN";
 	font-weight: bold;
 }
 .ctn_card .excerpt {
-	font-family: "Hiragino Kaku Gothic ProN";
 	font-size: 1.4rem;
 	line-height: 1.5;
 	color: #322824;
