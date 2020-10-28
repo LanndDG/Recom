@@ -194,5 +194,17 @@ window.addEventListener('load', () => {
       }
     })
   }
-});
+  if (page === 'request.html') {
+    requestForm.addEventListener('input', () => {
+      if(contentRequest.value.length > 0 &&
+        nameAnonymos.value.length > 0) {
+          requestSubmit.removeAttribute('disabled');
+          requestSubmit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #FFFFFF');
+      }else {
+        requestSubmit.setAttribute('disabled', 'disabled');
+        requestSubmit.setAttribute('style', 'background-color: rgb(175,175,175);cursor: default');
+      }
+    })
+  }
+})
 

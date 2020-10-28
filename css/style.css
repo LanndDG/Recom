@@ -67,7 +67,7 @@ input,textarea {
 	border: 2px solid #F5885D;
 	border-radius: 50px;
 	color: #F5885D;
-	font-family: "Hiragino Kaku Gothic ProN W6";
+	font-weight: bold;
 	font-size: 1.4rem;
 	display: block;
 	text-decoration: none;
@@ -149,14 +149,12 @@ input,textarea {
 .right_card p.channel {
 	font-size: 1rem;
 	line-height: 1.7;
-	font-family: "Hiragino Kaku Gothic ProN";
 	color: #897E79;
 }
 .right_card .name_channel {
 	font-size: 1.6rem;
 	line-height: 1.375;
 	color: #322824;
-	font-family: "Hiragino Kaku Gothic ProN";
 	font-weight: bold;
 }
 .right_card .sum_comment {
@@ -201,7 +199,7 @@ input,textarea {
 	background: #F5885D;
 	font-size: 1.2rem;
 	line-height: 1.6667;
-	font-family: "Hiragino Kaku Gothic ProN W6";
+	font-weight: bold;
 	color: #ffffff;
 	padding: 10px 16px;
 	position: relative;
@@ -230,11 +228,9 @@ input,textarea {
 	color: #322824;
 	font-size: 1.4rem;
 	line-height: 1.72;
-	font-family: "Hiragino Kaku Gothic ProN";
 	font-weight: bold;
 }
 .ctn_card .excerpt {
-	font-family: "Hiragino Kaku Gothic ProN";
 	font-size: 1.4rem;
 	line-height: 1.5;
 	color: #322824;
@@ -302,12 +298,12 @@ input,textarea {
 	padding-bottom: 8px;
 }
 .ttl_section span {
-font-family: 'Hiragino Kaku Gothic ProN W6';
-line-height: 2.7;
-font-weight: bold;
-letter-spacing: 1px;
-padding-left: 12px;
-color: rgb(137, 126, 121);
+	font-family: 'Hiragino Kaku Gothic ProN W6';
+	line-height: 2.7;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding-left: 12px;
+	color: rgb(137, 126, 121);
 }
 .ttl_section::before {
 	content: '';
@@ -347,35 +343,35 @@ color: rgb(137, 126, 121);
 	padding-top: 15px;
 }
 .company_sec01 .info_company {
-background-color: #ffffff;
-border-radius: 7px;
-padding: 0 16px;
+	background-color: #ffffff;
+	border-radius: 7px;
+	padding: 0 16px;
 }
 .company_sec01 table {
 	width: 100%;
 }
 .company_sec01 table th {
-font-size: 1.4rem;
-line-height: 3.7;
-color: rgb(137, 126, 121);
-font-weight: bold;
-border-bottom: 1px solid rgb(230 ,230 ,230);
-text-align: left;
+	font-size: 1.4rem;
+	line-height: 3.7;
+	color: rgb(137, 126, 121);
+	font-weight: bold;
+	border-bottom: 1px solid rgb(230 ,230 ,230);
+	text-align: left;
 }
 .company_sec01 table td {
-font-size: 1.4rem;
-line-height: 1.7;
-margin-left: 100px;
-border-bottom: 1px solid rgb(230 ,230 ,230);
+	font-size: 1.4rem;
+	line-height: 1.7;
+	margin-left: 100px;
+	border-bottom: 1px solid rgb(230 ,230 ,230);
 }
 .company_sec01 table tr:last-child th,
 .company_sec01 table tr:last-child td {
-border-bottom: none;
+	border-bottom: none;
 }
 .company_sec01 table tr:nth-child(2) th,
 .company_sec01 table tr:nth-child(2) td {
-vertical-align: middle;
-padding: 8px 0;
+	vertical-align: middle;
+	padding: 8px 0;
 }
 .company_sec02,
 .company_sec03 {
@@ -397,15 +393,15 @@ padding: 8px 0;
 	padding-bottom: 24px;
 }
 .company_sec03 .wrapper_contact h5 {
-font-size: 1.4rem;
-font-weight: bold;
-line-height: 2.4;
-padding: 6px 0 2px 0;
+	font-size: 1.4rem;
+	font-weight: bold;
+	line-height: 2.4;
+	padding: 6px 0 2px 0;
 }
 .company_sec03 .wrapper_contact h5 span {
 	font-size: 1rem;
-color: rgb(219, 64, 44,0.4);
-margin-left: 7px;
+	color: rgb(219, 64, 44,0.4);
+	margin-left: 7px;
 }
 .company_sec03 .wrapper_contact input[type=text] {
 	width: 100%;
@@ -422,7 +418,6 @@ margin-left: 7px;
 .company_sec03 .submit {
 	margin: 0 16px;
 }
-
 
 /****************************************************
 * REQUEST PAGE CONTENT SETTING
@@ -472,6 +467,7 @@ margin-left: 7px;
 	height: 120px;
 	padding: 16px;
 	margin-bottom: 8px;
+	resize: none;
 }
 
 .sec01_input {
@@ -494,6 +490,7 @@ margin-left: 7px;
 	border-radius: 24px;
 	color: rgb(154 154 154);
 	font-size: 1.6rem;
+	border: none;
 }
 
 .request_sec02 {
@@ -568,7 +565,8 @@ margin-left: 7px;
 	color: rgb(221 221 221);
 	font-size: 1.6rem;
 	font-family: 'Hiragino Kaku Gothic ProN W3';
-  }
+	text-decoration: none;
+}
 
   	/****************************************************
   * DETAIL PAGE CONTENT SETTING
@@ -669,17 +667,21 @@ margin-left: 7px;
 	
 	.rating > label { 
 		color: #ffffff; 
-	float: right; 
+		float: right; 
 	}
 	
 	.rating > input:checked ~ label, /* show gold star when clicked */
 	.rating:not(:checked) > label:hover, /* hover current star */
-	.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+	.rating:not(:checked) > label:hover ~ label { 
+		color: rgb(255 ,178 ,93);  
+	} /* hover previous stars in list */
 	
 	.rating > input:checked + label:hover, /* hover current star when changing rating */
 	.rating > input:checked ~ label:hover,
 	.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-	.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+	.rating > input:checked ~ label:hover ~ label { 
+		color: rgb(255 ,178 ,93);  
+	} 
 	.detail_sec03 {
 		padding: 32px 0 40px 0;
 	}
