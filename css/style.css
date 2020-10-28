@@ -685,6 +685,79 @@ input,textarea {
 	.detail_sec03 {
 		padding: 32px 0 40px 0;
 	}
+
+/****************************************************
+* SEARCH PAGE CONTENT SETTING
+****************************************************/
+.seacrch_sec01 {
+	padding-top: 16px;
+	height: 100vh;
+}
+
+.search_result {
+	font-size: 1.2rem;
+	color: rgb(50 40 36);
+	margin: 16px 0;
+}
+
+.search_result span {
+	font-weight: bold;
+}
+
+.search_box {
+	display: flex;
+	flex-direction: row;
+	height: 96px;
+	background-color: rgb(255 255 255);
+	padding: 12px;
+	margin-bottom: 12px;
+}
+
+.search_content {
+	padding-left: 20px;
+}
+
+.search_name {
+	font-size: 1rem;
+	color: rgb(137 126 121);
+	padding: 7px 0 8px;
+}
+
+.search_desc {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: rgb(50 40 36);
+	padding-bottom: 13px;
+}
+
+.search_comment {
+	font-size: 1.2rem;
+	color: rgb(137 126 121);
+}
+
+.icon_comment {
+	margin-right: 4px;
+	margin-top: 2px;
+}
+
+.search_wrapper {
+	margin-top: 32px;
+	text-align: center;
+}
+
+.search_btn01 {
+	border: 2px solid rgb(245 136 93);
+	color: rgb(245 136 93);
+	border-radius: 24px;
+	font-size: 1.6rem;
+	padding: 16px 24px 16px 20px;
+	display: inline-block;
+}
+
+.search_btn01 img {
+	margin-right: 12px;
+}
+
 @media only screen and (max-width: 768px) {
 /****************************************************
 * 6.LAYOUT SETTING ON SP
