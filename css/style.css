@@ -166,6 +166,9 @@ input,textarea {
 	display: inline-block;
 	vertical-align: middle;
 }
+.right_card .sum_comment img {
+	margin-right: 4px;
+}
 .card_box .rate {
 	position: absolute;
 	top: 4px;
@@ -702,42 +705,6 @@ input,textarea {
 
 .search_result span {
 	font-weight: bold;
-}
-
-.search_box {
-	display: flex;
-	flex-direction: row;
-	height: 96px;
-	background-color: rgb(255 255 255);
-	padding: 12px;
-	margin-bottom: 12px;
-}
-
-.search_content {
-	padding-left: 20px;
-}
-
-.search_name {
-	font-size: 1rem;
-	color: rgb(137 126 121);
-	padding: 7px 0 8px;
-}
-
-.search_desc {
-	font-size: 1.6rem;
-	font-weight: bold;
-	color: rgb(50 40 36);
-	padding-bottom: 13px;
-}
-
-.search_comment {
-	font-size: 1.2rem;
-	color: rgb(137 126 121);
-}
-
-.icon_comment {
-	margin-right: 4px;
-	margin-top: 2px;
 }
 
 .search_wrapper {
