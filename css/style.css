@@ -383,6 +383,27 @@ input,textarea {
 	border: none;
 	border-radius: 5px;
 }
+.company_sec02 ul {
+	background-color: #ffffff;
+	padding: 16px;
+}
+.company_sec02 ul li {
+	font-size: 1.4rem;
+	line-height: 2.4;
+	position: relative;
+    padding-left: 10px;
+}
+.company_sec02 ul li::before {
+	content: '';
+	height: 4px;
+	width: 4px;
+	background-color: rgb(245, 155, 72);
+	border-radius: 10px;
+	display: inline-block;
+	position: absolute;
+    top: 14px;
+    left: 1px;
+}
 .company_sec03 .wrapper_contact {
 	margin: 0 16px;
 	padding: 4px 0 16px;
