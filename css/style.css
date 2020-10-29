@@ -697,6 +697,7 @@ input,textarea {
 	font-size: 1.6rem;
 	padding: 16px 24px 16px 20px;
 	display: inline-block;
+	text-decoration: none;
 }
 
 .search_btn01 img {
