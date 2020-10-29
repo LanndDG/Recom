@@ -1,70 +1,4 @@
-// function scrollToTop() {
-//   $(".pagetop img").click(function () {
-//     $("html, body").animate(
-//       {
-//         scrollTop: 0,
-//       },
-//       500
-//     );
-//   });
-// }
-// scroll to top
 
-function scrollToTop() {
-  var isToppage = $('#index');
-  var windowHeight = window.innerHeight;
-  var bodyHeight = $('body').height();
-
-  $(window).scroll(function(){
-    var scrollHeight = $(this).scrollTop();
-    if (isToppage.length > 0) {
-      if (windowHeight <= scrollHeight - 100) {
-          $('.page_top').show();
-      } else {
-          $('.page_top').hide();
-      }
-    } else {
-      if (bodyHeight >= windowHeight && scrollHeight >= 5) {
-        $('.page_top').show();
-      } else {
-        $('.page_top').hide();
-      }
-    }
-  });
-
-  $(".page_top").click(function() {
-      $("html, body").animate({
-          scrollTop: 0
-      }, 500);
-  });
-}
-
-function calculateTopPagePostion() {
-  var windowWidth = window.innerWidth;
-  var containerWidth = 1120;
-  var conditionalWidth = containerWidth + 100;
-
-  if(windowWidth >= conditionalWidth) {
-      var right = (windowWidth - conditionalWidth) / 2 - 28;
-      $('.page_top').css('right', right);
-  } else {
-      $('.page_top').css('right', 20);
-  }
-}
-
-function toggleMenu() {
-  $("#header .btn_toggle").on("click", function () {
-    $("#gNav").toggleClass("open");
-    $(this).toggleClass("change");
-  });
-}
-function removeMemuOnSp() {
-  var windowSize = window.innerWidth;
-  if ($("#gNav.open").length > 0 && windowSize > 768) {
-    $("#gNav").removeClass("open");
-    $(".btn_toggle").removeClass("change");
-  }
-}
 //menu
 
 jQuery.validator.addMethod("emailRule", function(value, element) {
@@ -135,33 +69,15 @@ $("#form").validate({
 });
 //form
 
-scrollToTop();
-calculateTopPagePostion();
-toggleMenu();
-$(window).resize(function () {
-  calculateTopPagePostion();
-  removeMemuOnSp();
-});
 var $window = $(window);
 var $body = $("body");
 var $html = $("html");
 var $bodyHtml = $("body,html");
 var winwidth = window.innerWidth;
-window.addEventListener("scroll", _handleScroll, false);
-function _handleScroll() {
-  $("#header").css({
-    left: -window.scrollX + "px",
-  });
-}
 
-
-// Anchor link smooth
-$(document).on('click', 'a[href^="#"]', function(event) {
+$(document).on('click', 'a[href^="*"]', function(event) {
   event.preventDefault();
-  var offsetSize = $("header").innerHeight() + 5;
-  $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top - offsetSize
-  }, 900);
+  alert('送信いたしました！');
 });
 window.addEventListener('load', () => {
   var path = window.location.pathname;
@@ -188,7 +104,7 @@ window.addEventListener('load', () => {
           $(this).html(numItems);
       }
       numItems--;
-  })
+    });
     formRating.addEventListener('input', () => {
       const checkboxes = document.querySelectorAll('input[name="rating"]:checked');
       if(コメント.value.length > 0 &&
