@@ -113,6 +113,7 @@ input,textarea {
 	color: rgb(50 40 36 / .4);
 	width: 100%;
 	box-shadow: 0px 0px 6px -2px #FFBB80;
+	outline: none;
 }
 .top_searchbox form {
 	position: relative;
