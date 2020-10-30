@@ -6,9 +6,12 @@ jQuery.validator.addMethod("emailRule", function(value, element) {
 },'入力に誤りがあります。');
 jQuery.validator.addMethod("phoneRule", function(value, element) {
   return value.match(/^[0-9]/);
-},'未入力です。');
+},'入力に誤りがあります');
+// jQuery.validator.addMethod("spaceRule", function(value, element) {
+//   return value.match(/^$|\S+.+/);
+// },'入力に誤りがあります');
 $("#form").validate({
-  invalidHandler: function(form, validator) {
+  invalidHandler: function(value, validator) {
     var errors = validator.numberOfInvalids();
     var offsetSize = $("header").innerHeight();
     if (errors) {                    
@@ -19,9 +22,22 @@ $("#form").validate({
         firstInvalidElement.focus();
     }
   },
-  normalizer: function(value) {
+  success: function() {
+    $( "input" ).on( "blur", function() {
+      $( this ).val(function( i, val ) {
+        return val.trim();
+      });
+    });
+    $( "textarea" ).on( "blur", function() {
+      $( this ).val(function( i, val ) {
+        return val.trim();
+      });
+    });
+},
+  normalizer: function() {
     // Trim the value of every element
     return $.trim(value);
+    
   },
   rules: {
     '氏名': {
@@ -29,7 +45,6 @@ $("#form").validate({
     },
     'メールアドレス': {
       required: true,
-      email: true,
       emailRule: true
     },
     'お問い合わせ内容': {
@@ -46,7 +61,6 @@ $("#form").validate({
     },
     'メールアドレス': {
       required: "未入力です。",
-      email: "入力に誤りがあります。"
     },
     'お問い合わせ内容': {
       required: "未入力です。",
