@@ -594,7 +594,7 @@ input,textarea {
 		font-size: 1.4rem;
 		line-height: 2.4;
 		font-weight: bold;
-		color: rgb(137, 126, 121);
+		color: #897E79;
 		text-align: left;
 		border-bottom: 1px solid #E6E6E6;
 		width: 130px;
@@ -638,7 +638,7 @@ input,textarea {
 	}
 	.detail_sec02 .wrapper_rating span {
 		font-size: 1.4rem;
-		color: rgb(137, 126, 121);
+		color: #897E79;
 		margin-right: 15px;
 	}
 	.detail_sec02 .rating { 

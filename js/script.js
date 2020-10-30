@@ -114,7 +114,7 @@ window.addEventListener('load', () => {
         submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #ffffff');
       }else {
         submit.setAttribute('disabled', 'disabled');
-        submit.setAttribute('style', 'background-color: #CBCBCB;cursor: default');
+        submit.setAttribute('style', 'background-color: CBCBCB;cursor: default');
       }
     })
   }
