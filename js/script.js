@@ -92,7 +92,7 @@ window.addEventListener('load', () => {
         submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #ffffff');
       }else {
         submit.setAttribute('disabled', 'disabled');
-        submit.setAttribute('style', 'background-color: #cbcbcb;cursor: default');
+        submit.setAttribute('style', 'background-color: #CBCBCB;cursor: default');
       }
     })
   }
@@ -114,7 +114,7 @@ window.addEventListener('load', () => {
         submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #ffffff');
       }else {
         submit.setAttribute('disabled', 'disabled');
-        submit.setAttribute('style', 'background-color: #cbcbcb;cursor: default');
+        submit.setAttribute('style', 'background-color: CBCBCB;cursor: default');
       }
     })
   }
@@ -126,7 +126,7 @@ window.addEventListener('load', () => {
           requestSubmit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #FFFFFF');
       }else {
         requestSubmit.setAttribute('disabled', 'disabled');
-        requestSubmit.setAttribute('style', 'background-color: #cbcbcb;cursor: default');
+        requestSubmit.setAttribute('style', 'background-color: #CBCBCB;cursor: default');
       }
     })
   }

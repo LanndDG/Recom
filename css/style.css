@@ -325,10 +325,10 @@ input,textarea {
 	font-family: 'Hiragino Kaku Gothic ProN W6';
 	width: 100%;
 	height: 44px;
-	background-color: rgb(175,175,175);
+	background-color: #CBCBCB;
 	border: none;
 	border-radius: 20px;
-	}
+}
 .is-error {
 	font-size: 1.2rem;
 	color: #ff0000;
@@ -359,14 +359,14 @@ input,textarea {
 	line-height: 3.7;
 	color: #897E79;
 	font-weight: bold;
-	border-bottom: 1px solid rgb(230 ,230 ,230);
+	border-bottom: 1px solid #E6E6E6;
 	text-align: left;
 }
 .company_sec01 table td {
 	font-size: 1.4rem;
 	line-height: 1.7;
 	margin-left: 100px;
-	border-bottom: 1px solid rgb(230 ,230 ,230);
+	border-bottom: 1px solid #E6E6E6;
 }
 .company_sec01 table tr:last-child th,
 .company_sec01 table tr:last-child td {
@@ -401,7 +401,7 @@ input,textarea {
 	content: '';
 	height: 4px;
 	width: 4px;
-	background-color: rgb(245, 155, 72);
+	background-color: #F59B48;
 	border-radius: 10px;
 	display: inline-block;
 	position: absolute;
@@ -425,7 +425,7 @@ input,textarea {
 }
 .company_sec03 .wrapper_contact h5 span {
 	font-size: 1rem;
-	color: rgb(219, 64, 44,0.4);
+	color: #DB402C;
 	margin-left: 7px;
 }
 .company_sec03 .wrapper_contact input[type=text] {
@@ -433,12 +433,14 @@ input,textarea {
 	height: 40px;
 	border: 1px solid #E6E6E6;
 	border-radius: 5px;
+	outline: none;
 }
 .company_sec03 .wrapper_contact textarea {
 	width: 100%;
 	height: 120px;
 	border: 1px solid #E6E6E6;
 	border-radius: 5px;
+	outline: none;
 }
 .company_sec03 .submit {
 	margin: 0 16px;
@@ -459,31 +461,13 @@ input,textarea {
 	justify-content: space-between;
 	padding-bottom: 20px;
 }
-.sec01_ttl01 {
-	font-weight: bold;
-	color: rgb(137 126 121);
-	font-size: 1.6rem;
-	line-height: 27px;
-	padding-bottom: 12px;
-	display: flex;
-	align-items: center;
-}
-.sec01_ttl01::before {
-	content: "";
-	display: inline-block;
-	width: 4px;
-	height: 24px;
-	margin-right: 8px;
-	background-image: url(../img/request/icon_ttl01.png);
-	background-repeat: no-repeat;
-}
 .sec01_desc {
 	font-size: 1.1rem;
 	line-height: 16px;
 	color: #322824;
 }
 .sec01_textarea {
-	border:1px solid rgb(247 224 203);
+	border: 1px solid #F7E0CB;
 	border-radius: 10px;
 	width: 100%;
 	height: 120px;
@@ -492,9 +476,10 @@ input,textarea {
 	resize: none;
 	font-size: 1.6rem;
 	color: #322824;
+	outline: none;
 }
 .sec01_input {
-	border: 1px solid rgb(247 224 203);
+	border: 1px solid #F7E0CB;
 	border-radius: 10px;
 	width: 100%;
 	height: 40px;
@@ -502,17 +487,18 @@ input,textarea {
 	margin-bottom: 16px;
 	font-size: 1.6rem;
 	color: #322824;
+	outline: none;
 }
 .sec01_btn01 {
 	width: 100%;
-	background-color: rgb(203 203 203);
+	background-color: #CBCBCB;
 	font-weight: bold;
 	margin-bottom: 32px;
 	display: inline-block;
 	text-align: center;
 	padding: 14px 0;
 	border-radius: 24px;
-	color: rgb(154 154 154);
+	color: #9A9A9A;
 	font-size: 1.6rem;
 	border: none;
 }
@@ -520,7 +506,7 @@ input,textarea {
 	padding-bottom: 32px;
 }
 .request_box {
-	background-color: rgb(255 255 255);
+	background-color: #ffffff;
 	padding: 16px;
 	border-radius: 6px;
 }
@@ -556,7 +542,7 @@ input,textarea {
 }
 .request_box_time {
 	font-size: 1rem;
-	color: rgb(137 126 121);
+	color: #897E79;
 }
 .request_box .detail_link {
 	color: #F5885D;
@@ -568,9 +554,9 @@ input,textarea {
 	padding: 32px 0;
 	display: inline-block;
 	margin: 16px 0;
-	background-color: rgb(175 175 175);
+	background-color: #AFAFAF;
 	text-align: center;
-	color: rgb(221 221 221);
+	color: #DDDDDD;
 	font-size: 1.6rem;
 	text-decoration: none;
 }
@@ -610,14 +596,14 @@ input,textarea {
 		font-weight: bold;
 		color: #897E79;
 		text-align: left;
-		border-bottom: 1px solid rgb(230 ,230 ,230);
+		border-bottom: 1px solid #E6E6E6;
 		width: 130px;
 	}
 	.detail_sec01 table td {
 		font-size: 1.4rem;
 		line-height: 2.4;
 		color: rgb(50, 40, 36);
-		border-bottom: 1px solid rgb(230 ,230 ,230);
+		border-bottom: 1px solid #E6E6E6;
 		padding-left: 38px;
 	}
 	.detail_sec01 .correction {
@@ -713,7 +699,7 @@ input,textarea {
 	text-align: center;
 }
 .search_btn01 {
-	border: 2px solid ;
+	border: 2px solid #F5885D;
 	color: #F5885D;
 	border-radius: 24px;
 	font-size: 1.6rem;
