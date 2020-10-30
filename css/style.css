@@ -307,7 +307,7 @@ input,textarea {
 	font-weight: bold;
 	letter-spacing: 1px;
 	padding-left: 12px;
-	color: rgb(137, 126, 121);
+	color: #897E79;
 }
 .ttl_section::before {
 	content: '';
@@ -357,7 +357,7 @@ input,textarea {
 .company_sec01 table th {
 	font-size: 1.4rem;
 	line-height: 3.7;
-	color: rgb(137, 126, 121);
+	color: #897E79;
 	font-weight: bold;
 	border-bottom: 1px solid rgb(230 ,230 ,230);
 	text-align: left;
@@ -431,13 +431,13 @@ input,textarea {
 .company_sec03 .wrapper_contact input[type=text] {
 	width: 100%;
 	height: 40px;
-	border: 1px solid rgb(230, 230, 230);
+	border: 1px solid #E6E6E6;
 	border-radius: 5px;
 }
 .company_sec03 .wrapper_contact textarea {
 	width: 100%;
 	height: 120px;
-	border: 1px solid rgb(230, 230, 230);
+	border: 1px solid #E6E6E6;
 	border-radius: 5px;
 }
 .company_sec03 .submit {
@@ -480,7 +480,7 @@ input,textarea {
 .sec01_desc {
 	font-size: 1.1rem;
 	line-height: 16px;
-	color: rgb(50 40 36);
+	color: #322824;
 }
 .sec01_textarea {
 	border:1px solid rgb(247 224 203);
@@ -491,7 +491,7 @@ input,textarea {
 	margin-bottom: 8px;
 	resize: none;
 	font-size: 1.6rem;
-	color: rgb(50 40 36);
+	color: #322824;
 }
 .sec01_input {
 	border: 1px solid rgb(247 224 203);
@@ -501,7 +501,7 @@ input,textarea {
 	padding: 12px 16px;
 	margin-bottom: 16px;
 	font-size: 1.6rem;
-	color: rgb(50 40 36);
+	color: #322824;
 }
 .sec01_btn01 {
 	width: 100%;
@@ -535,31 +535,31 @@ input,textarea {
 }
 .request_box h4 {
 	font-size: 10px;
-	color: rgb(50 40 36);
+	color: #322824;
 }
 .request_box .number {
 	font-size: 1.4rem;
-	color: rgb(50 40 36);
+	color: #322824;
 	margin-right: 8px;
 }
 .request_box .name {
 	font-weight: bold;
 	font-size: 1.4rem;
-	color: rgb(50 40 36);
+	color: #322824;
 	margin-right: 3px;
 }
 .request_box_decs {
 	padding-bottom: 10px; 
 	font-size: 1.4rem;
 	line-height: 21px;
-	color: rgb(50 40 36);
+	color: #322824;
 }
 .request_box_time {
 	font-size: 1rem;
 	color: rgb(137 126 121);
 }
 .request_box .detail_link {
-	color: rgb(245 136 93);
+	color: #F5885D;
 	font-size: 1.2rem;
 	text-decoration: underline;
 }
@@ -608,7 +608,7 @@ input,textarea {
 		font-size: 1.4rem;
 		line-height: 2.4;
 		font-weight: bold;
-		color: rgb(137, 126, 121);
+		color: #897E79;
 		text-align: left;
 		border-bottom: 1px solid rgb(230 ,230 ,230);
 		width: 130px;
@@ -652,7 +652,7 @@ input,textarea {
 	}
 	.detail_sec02 .wrapper_rating span {
 		font-size: 1.4rem;
-		color: rgb(137, 126, 121);
+		color: #897E79;
 		margin-right: 15px;
 	}
 	.detail_sec02 .rating { 
@@ -702,7 +702,7 @@ input,textarea {
 }
 .search_result {
 	font-size: 1.2rem;
-	color: rgb(50 40 36);
+	color: #322824;
 	margin: 16px 0;
 }
 .search_result span {
@@ -713,8 +713,8 @@ input,textarea {
 	text-align: center;
 }
 .search_btn01 {
-	border: 2px solid rgb(245 136 93);
-	color: rgb(245 136 93);
+	border: 2px solid ;
+	color: #F5885D;
 	border-radius: 24px;
 	font-size: 1.6rem;
 	padding: 16px 24px 16px 20px;
