@@ -571,123 +571,123 @@ input,textarea {
 	text-decoration: none;
 }
 
-  	/****************************************************
-  * DETAIL PAGE CONTENT SETTING
-	****************************************************/
-	.detail_sec01 iframe {
-		width: 100%;
-		height: 100%;
-	}
-	.detail_sec01 .video_stearm {
-		width: 100%;
-		height: 420px;
-	}
-	.detail_sec01 .detail_channel {
-		background-color: #ffffff;
-		padding: 0 15px 40px 15px;
-	}
-	.detail_sec01 .des_channel {
-		display: flex;
-		align-items: center;
-	}
-	.detail_sec01 .name_channel {
-		font-size: 2rem;
-		line-height: 3.2;
-		color: #322824;
-		font-weight: bold;
-		margin-left: 12px;
-	}
-	.detail_sec01 table {
-		width: 100%;
-	}
-	.detail_sec01 table th {
-		font-size: 1.4rem;
-		line-height: 2.4;
-		font-weight: bold;
-		color: #897E79;
-		text-align: left;
-		border-bottom: 1px solid #E6E6E6;
-		width: 130px;
-	}
-	.detail_sec01 table td {
-		font-size: 1.4rem;
-		line-height: 2.4;
-		color: #333333;
-		border-bottom: 1px solid #E6E6E6;
-		padding-left: 38px;
-	}
-	.detail_sec01 .correction {
-		color: #f5885d;
-		font-size: 1.2rem;
-		line-height: 2.4;
-		padding-top: 3px;
-		float: right;
-	}
-	.detail_sec02 textarea {
-		border: 1px solid #f7e0cb;
-		border-radius: 10px;
-		width: 100% !important;
-		height: 120px;
-		padding: 16px;
-		margin: 17px 0 8px 0;
-		font-size: 1.6rem;
-	}
-	.detail_sec02 .anonymous {
-		border: 1px solid #f7e0cb;
-		border-radius: 10px;
-		width: 100%;
-		height: 40px;
-		padding: 12px 16px;
-		margin-bottom: 16px;
-		font-size: 1.6rem;
-	}
-	.detail_sec02 .wrapper_rating {
-		display: flex;
-		align-items: center;
-		margin-bottom: 17px;
-	}
-	.detail_sec02 .wrapper_rating span {
-		font-size: 1.4rem;
-		color: #897E79;
-		margin-right: 15px;
-	}
-	.detail_sec02 .rating { 
+/****************************************************
+* DETAIL PAGE CONTENT SETTING
+****************************************************/
+.detail_sec01 iframe {
+	width: 100%;
+	height: 100%;
+}
+.detail_sec01 .video_stearm {
+	width: 100%;
+	height: 420px;
+}
+.detail_sec01 .detail_channel {
+	background-color: #ffffff;
+	padding: 0 15px 40px 15px;
+}
+.detail_sec01 .des_channel {
+	display: flex;
+	align-items: center;
+}
+.detail_sec01 .name_channel {
+	font-size: 2rem;
+	line-height: 3.2;
+	color: #322824;
+	font-weight: bold;
+	margin-left: 12px;
+}
+.detail_sec01 table {
+	width: 100%;
+}
+.detail_sec01 table th {
+	font-size: 1.4rem;
+	line-height: 2.4;
+	font-weight: bold;
+	color: #897E79;
+	text-align: left;
+	border-bottom: 1px solid #E6E6E6;
+	width: 130px;
+}
+.detail_sec01 table td {
+	font-size: 1.4rem;
+	line-height: 2.4;
+	color: #333333;
+	border-bottom: 1px solid #E6E6E6;
+	padding-left: 38px;
+}
+.detail_sec01 .correction {
+	color: #f5885d;
+	font-size: 1.2rem;
+	line-height: 2.4;
+	padding-top: 3px;
+	float: right;
+}
+.detail_sec02 textarea {
+	border: 1px solid #f7e0cb;
+	border-radius: 10px;
+	width: 100% !important;
+	height: 120px;
+	padding: 16px;
+	margin: 17px 0 8px 0;
+	font-size: 1.6rem;
+}
+.detail_sec02 .anonymous {
+	border: 1px solid #f7e0cb;
+	border-radius: 10px;
+	width: 100%;
+	height: 40px;
+	padding: 12px 16px;
+	margin-bottom: 16px;
+	font-size: 1.6rem;
+}
+.detail_sec02 .wrapper_rating {
+	display: flex;
+	align-items: center;
+	margin-bottom: 17px;
+}
+.detail_sec02 .wrapper_rating span {
+	font-size: 1.4rem;
+	color: #897E79;
+	margin-right: 15px;
+}
+.detail_sec02 .rating { 
 	border: none;
 	float: left;
-  	}
-  
-	.rating > input { display: none; } 
-	.rating > label:before { 
-		margin: 0 6px 0 6px;
-		font-size: 2em;
-		font-family: FontAwesome;
-		display: inline-block;
-		content: "\f005";
-		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color:#ffb25d;
-	}
-	
-	
-	.rating > label { 
-		color: #ffffff; 
-		float: right; 
-	}
-	
-	.rating > input:checked ~ label, /* show gold star when clicked */
-	.rating:not(:checked) > label:hover, /* hover current star */
-	.rating:not(:checked) > label:hover ~ label { 
-		color: #ffb25d;  
-	} /* hover previous stars in list */
-	
-	.rating > input:checked + label:hover, /* hover current star when changing rating */
-	.rating > input:checked ~ label:hover,
-	.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-	.rating > input:checked ~ label:hover ~ label { 
-		color: #ffb25d;  
-	} 
-	.detail_sec03 {
-		padding: 32px 0 40px 0;
-	}
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+	margin: 0 6px 0 6px;
+	font-size: 2em;
+	font-family: FontAwesome;
+	display: inline-block;
+	content: "\f005";
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color:#ffb25d;
+}
+
+
+.rating > label { 
+	color: #ffffff; 
+	float: right; 
+}
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { 
+	color: #ffb25d;  
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { 
+	color: #ffb25d;  
+} 
+.detail_sec03 {
+	padding: 32px 0 40px 0;
+}
 
 /****************************************************
 * SEARCH PAGE CONTENT SETTING
@@ -725,10 +725,7 @@ input,textarea {
 
 @media only screen and (max-width: 768px) {
 /****************************************************
-* 6.LAYOUT SETTING ON SP
-****************************************************/
-/****************************************************
-* 7.TEMPLATE SETTING ON SP
+* 5.TEMPLATE SETTING ON SP
 ****************************************************/
     /****************************************************
     * HEADER TEMPLATE SETTING
@@ -749,5 +746,11 @@ input,textarea {
 @media only screen and (max-width: 375px) {
 	.company_sec01 table th	{
 		width: 90px;
+	}
+}
+@media only screen and (max-width: 374px) {
+	.request_sec01 .sec01_row01 img {
+		width: 100px;
+		height: auto;
 	}
 }
