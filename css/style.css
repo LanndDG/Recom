@@ -84,7 +84,7 @@ input,textarea {
 ****************************************************/
 #header {
 	background: #ffffff;
-	padding: 10px 15px;
+	padding: 10px 15px 10px 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -107,13 +107,14 @@ input,textarea {
 .top_searchbox input{
 	border: none;
 	border-radius: 50px;
-	padding: 10px 22px 11px;
+	padding: 11px 22px 10px;
 	font-size: 1.6rem;
 	line-height: 1.6875;
 	color: rgb(50 40 36 / .4);
 	width: 100%;
 	box-shadow: 0px 0px 6px -2px #FFBB80;
 	outline: none;
+	letter-spacing: 1px;
 }
 .top_searchbox form {
 	position: relative;
@@ -123,9 +124,10 @@ input,textarea {
     border: none;
     position: absolute;
     top: 30%;
-	right: 20px;
+	right: 18px;
 	outline: none;
 	transition: all 0.5s;
+	padding: 0;
 }
 .top_searchbox button:hover {
 	cursor: pointer;
@@ -133,6 +135,7 @@ input,textarea {
 }
 .top_sec01 .ttl_section {
 	margin-top: 17px;
+	padding-bottom: 6px;
 }
 .card_box {
 	display: flex;
@@ -148,7 +151,7 @@ input,textarea {
 	margin-top: 12px;
 }
 .card_box .right_card {
-	padding-left: 20px;
+	padding-left: 22px;
 }
 .right_card p.channel {
 	font-size: 1rem;
@@ -192,7 +195,7 @@ input,textarea {
 .card_box .left_card img {
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	width: 72px;
+	max-width: 72px;
 	height: 71px;
 }
 
@@ -208,7 +211,7 @@ input,textarea {
 	line-height: 1.6667;
 	font-weight: bold;
 	color: #ffffff;
-	padding: 10px 16px;
+	padding: 6px 16px;
 	position: relative;
 	padding-left: 35px;
 	border-top-left-radius: 5px;
@@ -305,7 +308,6 @@ input,textarea {
 	padding-bottom: 8px;
 }
 .ttl_section span {
-	font-family: 'Hiragino Kaku Gothic ProN W6';
 	line-height: 2.7;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -325,7 +327,6 @@ input,textarea {
 .submit input {
 	font-size: 1.6rem;
 	font-weight: bold;
-	font-family: 'Hiragino Kaku Gothic ProN W6';
 	width: 100%;
 	height: 44px;
 	background-color: #CBCBCB;
