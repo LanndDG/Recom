@@ -209,15 +209,18 @@ input,textarea {
 }
 .card_comment .ttl_card {
 	background: #F5885D;
-	font-size: 1.2rem;
-	line-height: 1.6667;
-	font-weight: bold;
-	color: #ffffff;
 	padding: 6px 16px;
 	position: relative;
 	padding-left: 35px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+}
+.card_comment .ttl_card a {
+	font-size: 1.2rem;
+	line-height: 1.6667;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
 }
 .card_comment .ttl_card:before {
 	content: "";
