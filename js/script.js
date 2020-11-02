@@ -103,10 +103,10 @@ window.addEventListener('load', () => {
         電話番号.value.length > 0 && 
         お問い合わせ内容.value.length > 0) {
         submit.removeAttribute('disabled');
-        submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #ffffff');
+        submit.setAttribute('style', 'background-color: #F5885D;cursor: pointer;color: #ffffff');
       }else {
         submit.setAttribute('disabled', 'disabled');
-        submit.setAttribute('style', 'background-color: rgb(175,175,175);cursor: default');
+        submit.setAttribute('style', 'background-color: #CBCBCB;cursor: default');
       }
     })
   }
@@ -125,10 +125,10 @@ window.addEventListener('load', () => {
         匿名可.value.length > 0 && 
         checkboxes.length > 0) {
         submit.removeAttribute('disabled');
-        submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #ffffff');
+        submit.setAttribute('style', 'background-color: #F5885D;cursor: pointer;color: #ffffff');
       }else {
         submit.setAttribute('disabled', 'disabled');
-        submit.setAttribute('style', 'background-color: rgb(175,175,175);cursor: default');
+        submit.setAttribute('style', 'background-color: #CBCBCB;cursor: default');
       }
     })
   }
@@ -145,10 +145,10 @@ window.addEventListener('load', () => {
       if(contentRequest.value.length > 0 &&
         nameAnonymos.value.length > 0) {
           requestSubmit.removeAttribute('disabled');
-          requestSubmit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #FFFFFF');
+          requestSubmit.setAttribute('style', 'background-color: #F5885D;cursor: pointer;color: #FFFFFF');
       }else {
         requestSubmit.setAttribute('disabled', 'disabled');
-        requestSubmit.setAttribute('style', 'background-color: rgb(175,175,175);cursor: default');
+        requestSubmit.setAttribute('style', 'background-color: #CBCBCB;cursor: default');
       }
     })
   }
