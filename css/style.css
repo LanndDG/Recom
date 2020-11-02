@@ -606,19 +606,19 @@ input,textarea {
 	.detail_sec01 table td {
 		font-size: 1.4rem;
 		line-height: 2.4;
-		color: rgb(50, 40, 36);
+		color: #333333;
 		border-bottom: 1px solid #E6E6E6;
 		padding-left: 38px;
 	}
 	.detail_sec01 .correction {
-		color: rgb(245,	136, 93);
+		color: #f5885d;
 		font-size: 1.2rem;
 		line-height: 2.4;
 		padding-top: 3px;
 		float: right;
 	}
 	.detail_sec02 textarea {
-		border: 1px solid rgb(247 224 203);
+		border: 1px solid #f7e0cb;
 		border-radius: 10px;
 		width: 100% !important;
 		height: 120px;
@@ -627,7 +627,7 @@ input,textarea {
 		font-size: 1.6rem;
 	}
 	.detail_sec02 .anonymous {
-		border: 1px solid rgb(247 224 203);
+		border: 1px solid #f7e0cb;
 		border-radius: 10px;
 		width: 100%;
 		height: 40px;
@@ -658,7 +658,7 @@ input,textarea {
 		display: inline-block;
 		content: "\f005";
 		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: rgb(255, 178, 93);
+		-webkit-text-stroke-color:#ffb25d;
 	}
 	
 	
@@ -670,14 +670,14 @@ input,textarea {
 	.rating > input:checked ~ label, /* show gold star when clicked */
 	.rating:not(:checked) > label:hover, /* hover current star */
 	.rating:not(:checked) > label:hover ~ label { 
-		color: rgb(255 ,178 ,93);  
+		color: #ffb25d;  
 	} /* hover previous stars in list */
 	
 	.rating > input:checked + label:hover, /* hover current star when changing rating */
 	.rating > input:checked ~ label:hover,
 	.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 	.rating > input:checked ~ label:hover ~ label { 
-		color: rgb(255 ,178 ,93);  
+		color: #ffb25d;  
 	} 
 	.detail_sec03 {
 		padding: 32px 0 40px 0;

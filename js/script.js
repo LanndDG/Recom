@@ -2,14 +2,14 @@
 //menu
 
 jQuery.validator.addMethod("emailRule", function(value, element) {
-  return value.match(/^[\.!#%&\-_0-9a-zA-Z\?\/\+]+\@[!#%&\-_0-9a-zA-Z]+\.[!#%&\-_0-9a-zA-Z]+/);
+  return value.match(/^[\.!#%&\-_0-9a-zA-Z\s\?\/\+]+\@[!#%&\-_0-9a-zA-Z]+\.[!#%&\-_0-9a-zA-Z]+/);
 },'入力に誤りがあります。');
 jQuery.validator.addMethod("phoneRule", function(value, element) {
-  return value.match(/^[0-9]/);
+  return value.match(/^[0-9\s]/);
 },'入力に誤りがあります');
-// jQuery.validator.addMethod("spaceRule", function(value, element) {
-//   return value.match(/^$|\S+.+/);
-// },'入力に誤りがあります');
+jQuery.validator.addMethod("spaceRule", function(value, element) {
+  return value.match(/^$|\S+.+/);
+},'入力に誤りがあります');
 $("#form").validate({
   invalidHandler: function(value, validator) {
     var errors = validator.numberOfInvalids();
@@ -41,18 +41,18 @@ $("#form").validate({
   },
   rules: {
     '氏名': {
-      required: true
+      spaceRule: true
     },
     'メールアドレス': {
       required: true,
-      emailRule: true
+      emailRule: true,
     },
     'お問い合わせ内容': {
       required: true,
     },
     '電話番号': {
       required: true,
-      phoneRule:true
+      phoneRule:true,
     }
   },
   messages: {
@@ -106,7 +106,7 @@ window.addEventListener('load', () => {
         submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #ffffff');
       }else {
         submit.setAttribute('disabled', 'disabled');
-        submit.setAttribute('style', 'background-color: #CBCBCB;cursor: default');
+        submit.setAttribute('style', 'background-color: rgb(175,175,175);cursor: default');
       }
     })
   }
@@ -128,11 +128,19 @@ window.addEventListener('load', () => {
         submit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #ffffff');
       }else {
         submit.setAttribute('disabled', 'disabled');
-        submit.setAttribute('style', 'background-color: CBCBCB;cursor: default');
+        submit.setAttribute('style', 'background-color: rgb(175,175,175);cursor: default');
       }
     })
   }
   if (page === 'request.html') {
+    var numItems = $('.request_box').length;
+    $('.number').each(function(){
+      if(numItems>0)
+      {
+          $(this).html(numItems);
+      }
+      numItems--;
+    });
     requestForm.addEventListener('input', () => {
       if(contentRequest.value.length > 0 &&
         nameAnonymos.value.length > 0) {
@@ -140,7 +148,7 @@ window.addEventListener('load', () => {
           requestSubmit.setAttribute('style', 'background-color: rgb(245,136,93);cursor: pointer;color: #FFFFFF');
       }else {
         requestSubmit.setAttribute('disabled', 'disabled');
-        requestSubmit.setAttribute('style', 'background-color: #CBCBCB;cursor: default');
+        requestSubmit.setAttribute('style', 'background-color: rgb(175,175,175);cursor: default');
       }
     })
   }
