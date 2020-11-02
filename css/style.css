@@ -337,6 +337,9 @@ input,textarea {
 	background-color: #CBCBCB;
 	border: none;
 	border-radius: 20px;
+	-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 .is-error {
 	font-size: 1.2rem;
@@ -511,6 +514,9 @@ input,textarea {
 	color: #9A9A9A;
 	font-size: 1.6rem;
 	border: none;
+	-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 .request_sec02 {
 	padding-bottom: 32px;
