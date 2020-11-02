@@ -140,7 +140,6 @@ input,textarea {
 .card_box {
 	display: flex;
 	padding: 12px;
-	align-items: center;
 	background: #ffffff;
 	border-radius: 5px;
 	box-shadow: 0px 0px 6px -2px #FFBB80;
@@ -157,17 +156,20 @@ input,textarea {
 	font-size: 1rem;
 	line-height: 1.7;
 	color: #897E79;
+	margin-top: 3px;
 }
 .right_card .name_channel {
 	font-size: 1.6rem;
 	line-height: 1.375;
 	color: #322824;
 	font-weight: bold;
+	margin-bottom: 1px;
 }
 .right_card .sum_comment {
 	font-size: 1.2rem;
 	color: #897E79;
-	margin-top: 5px;
+	margin-top: 11px;
+	letter-spacing: 0.5px;
 }
 .right_card .sum_comment span {
 	display: inline-block;
