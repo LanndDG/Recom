@@ -457,7 +457,7 @@ appearance: none;
 	border-radius: 5px;
 	outline: none;
 	font-size: 1.6rem;
-	padding: 12px;
+	padding: 10px 12px;
 }
 .company_sec03 .submit {
 	margin: 0 16px;
@@ -488,7 +488,7 @@ appearance: none;
 	border-radius: 10px;
 	width: 100%;
 	height: 120px;
-	padding: 16px;
+	padding: 10px 16px;
 	margin-bottom: 8px;
 	resize: none;
 	font-size: 1.6rem;
