@@ -39,11 +39,11 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 $site_top = "http://webcircle09.heteml.net/demo/dg/Recom/";
 
 //管理者のメールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-$to = "direction@webcircle.co.jp";
+$to = "hoang92duc@gmail.com";
 
 //自動返信メールの送信元メールアドレス
 //必ず実在するメールアドレスでかつ出来る限り設置先サイトのドメインと同じドメインのメールアドレスとすることを強く推奨します
-$from = "direction@webcircle.co.jp";
+$from = "hoang92duc@gmail.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "メールアドレス";
@@ -295,14 +295,35 @@ else if($confirmDsp == 1){
 	htmlTemplate("footer");
 }
 if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 && $sendmail == 0))) {
-	if($empty_flag == 1){
-		htmlTemplate("header");
-		errorMes();
-		htmlTemplate("footer");
-	}else{
-		//完了ページ無しの場合は、TOPページヘリダイレクト
-		header("Location: ".$site_top);
-	}
+	/* ▼▼▼送信完了画面のレイアウト　編集可 ※送信完了後に指定のページに移動しない場合のみ表示▼▼▼　*/
+	?>
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>完了画面</title>
+	</head>
+	<body>
+	<div align="center">
+	<?php if($empty_flag == 1){ ?>
+	<h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
+	<div style="color:red"><?php echo $errm; ?></div>
+	<br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()">
+	</div>
+	</body>
+	</html>
+	<?php }else{ ?>
+            <?php 
+                    echo "<script type='text/javascript'>alert('送信いたしました！');</script>";
+
+				echo ("<script>location.href='$site_top'</script>");
+            ?>
+	<!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
+	</body>
+	</html>
+	<?php 
+	/* ▲▲▲送信完了画面のレイアウト 編集可 ※送信完了後に指定のページに移動しない場合のみ表示▲▲▲　*/
+	  }
 }
 //確認画面無しの場合の表示、指定のページに移動する設定の場合、エラーチェックで問題が無ければ指定ページヘリダイレクト
 else if(($jumpPage == 1 && $sendmail == 1) || $confirmDsp == 0) {
