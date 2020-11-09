@@ -33,7 +33,7 @@ $("#form").validate({
         return val.trim();
       });
     });
-},
+  },
   normalizer: function() {
     // Trim the value of every element
     return $.trim(value);
